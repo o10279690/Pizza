@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="MenuItemViewCell" customModule="Pizza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vw-sQ-1AD">
+                        <rect key="frame" x="24" y="8" width="55" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxG-bq-KY1">
+                        <rect key="frame" x="254" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqA-Fe-veE">
+                        <rect key="frame" x="32" y="43.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLu-Wy-i8U">
+                        <rect key="frame" x="217" y="37.5" width="79" height="48"/>
+                        <state key="normal" title="Add to Cart"/>
+                        <connections>
+                            <action selector="addToCart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gBu-y4-VDu"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OxG-bq-KY1" firstAttribute="centerY" secondItem="1Vw-sQ-1AD" secondAttribute="centerY" id="0md-am-oWM"/>
+                    <constraint firstItem="1Vw-sQ-1AD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="38g-na-rWR"/>
+                    <constraint firstAttribute="trailing" secondItem="OxG-bq-KY1" secondAttribute="trailing" constant="24" id="4eK-TM-Q2D"/>
+                    <constraint firstItem="qLu-Wy-i8U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zqA-Fe-veE" secondAttribute="trailing" constant="30" id="9yf-XW-Xgi"/>
+                    <constraint firstItem="zqA-Fe-veE" firstAttribute="top" secondItem="1Vw-sQ-1AD" secondAttribute="bottom" constant="8" id="AQV-db-lzH"/>
+                    <constraint firstItem="1Vw-sQ-1AD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="F2Z-nh-1zn"/>
+                    <constraint firstItem="zqA-Fe-veE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="GmG-z3-VEg"/>
+                    <constraint firstAttribute="bottom" secondItem="qLu-Wy-i8U" secondAttribute="bottom" constant="20" id="HHA-px-XcL"/>
+                    <constraint firstItem="qLu-Wy-i8U" firstAttribute="top" secondItem="OxG-bq-KY1" secondAttribute="bottom" constant="5" id="dOg-at-sY7"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zqA-Fe-veE" secondAttribute="bottom" constant="5" id="dpH-aW-D4u"/>
+                    <constraint firstAttribute="trailing" secondItem="qLu-Wy-i8U" secondAttribute="trailing" constant="24" id="itO-2Y-ff1"/>
+                    <constraint firstItem="OxG-bq-KY1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Vw-sQ-1AD" secondAttribute="trailing" constant="15" id="yMq-uD-tMw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="1Vw-sQ-1AD" id="hLY-3L-e8M"/>
+                <outlet property="priceLabel" destination="OxG-bq-KY1" id="4A8-t4-UnD"/>
+                <outlet property="toppingLabel" destination="zqA-Fe-veE" id="RY3-Uo-hVJ"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="76.46176911544228"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CartItemViewCell" rowHeight="83" id="6uN-N9-hgx" customClass="CartItemViewCell" customModule="Pizza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6uN-N9-hgx" id="itY-58-Qdg">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-Ea-kiI">
+                        <rect key="frame" x="24" y="8" width="55" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-JA-Sp3">
+                        <rect key="frame" x="254" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-cN-xTl">
+                        <rect key="frame" x="32" y="47.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-B8-Ie0">
+                        <rect key="frame" x="202" y="43.5" width="94" height="29"/>
+                        <connections>
+                            <action selector="quantityStepper:" destination="6uN-N9-hgx" eventType="valueChanged" id="sTy-92-72i"/>
+                        </connections>
+                    </stepper>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Tl-cN-xTl" firstAttribute="leading" secondItem="itY-58-Qdg" secondAttribute="leading" constant="32" id="1E5-S1-XMe"/>
+                    <constraint firstAttribute="trailing" secondItem="YO3-JA-Sp3" secondAttribute="trailing" constant="24" id="50F-zw-NBO"/>
+                    <constraint firstAttribute="bottom" secondItem="1Tl-cN-xTl" secondAttribute="bottom" constant="19.5" id="5d0-9y-gah"/>
+                    <constraint firstItem="YO3-JA-Sp3" firstAttribute="centerY" secondItem="LcD-Ea-kiI" secondAttribute="centerY" id="6Lg-ad-HLy"/>
+                    <constraint firstItem="LcD-Ea-kiI" firstAttribute="leading" secondItem="itY-58-Qdg" secondAttribute="leading" constant="24" id="7yf-Fp-5Qs"/>
+                    <constraint firstItem="Jhe-B8-Ie0" firstAttribute="centerY" secondItem="1Tl-cN-xTl" secondAttribute="centerY" id="FTr-Ov-Eas"/>
+                    <constraint firstItem="YO3-JA-Sp3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LcD-Ea-kiI" secondAttribute="trailing" constant="15" id="IUK-rB-fBn"/>
+                    <constraint firstAttribute="trailing" secondItem="Jhe-B8-Ie0" secondAttribute="trailing" constant="24" id="lXA-wv-oud"/>
+                    <constraint firstItem="LcD-Ea-kiI" firstAttribute="top" secondItem="itY-58-Qdg" secondAttribute="top" constant="8" id="rNU-Z7-3tO"/>
+                    <constraint firstItem="1Tl-cN-xTl" firstAttribute="top" secondItem="LcD-Ea-kiI" secondAttribute="bottom" constant="12" id="u5V-ay-9Xh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="L1N-Vt-143"/>
+            <connections>
+                <outlet property="nameLabel" destination="LcD-Ea-kiI" id="swA-Ro-d0g"/>
+                <outlet property="priceLabel" destination="YO3-JA-Sp3" id="py3-Vr-9l6"/>
+                <outlet property="quantityLabel" destination="1Tl-cN-xTl" id="AFo-8o-pxJ"/>
+                <outlet property="quantityStepper" destination="Jhe-B8-Ie0" id="etJ-X7-nz7"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="68.365817091454275"/>
+        </tableViewCell>
+    </objects>
+</document>
